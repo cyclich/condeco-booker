@@ -74,7 +74,7 @@ class WebDriver:
 
     def book_desk_for_next_week(self, desk_ID):
         self.driver.switch_to_frame('mainDisplayFrame')
-        for x in range(7, 11):
+        for x in range(7, 12):
             am_box = 'incAM_{}'.format(x)
             self.driver.find_element_by_id(am_box).click()
             pm_box = 'incPM_{}'.format(x)
